@@ -19,7 +19,7 @@ public class HelloWorldService {
 	@POST
 	@Path("/{edad}")
 	public Response getEdad(@PathParam("edad") String edad){
-		String output2 = "Cuantos años tienes?" + edad;
+		String output2 = "Cuantos años tienes: ?" + edad;
 		return Response.status(200).entity(output2).build();
 	}
 }
